@@ -1,0 +1,28 @@
+{
+  "name": "unique-ids",
+  "version": "0.0.0",
+  "description": "Transform html so that all ids are unique",
+  "main": "unique-ids.js",
+  "dependencies": {
+    "trumpet": "~1.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kesla/unique-ids.git"
+  },
+  "keywords": [
+    "html",
+    "transform",
+    "ids"
+  ],
+  "author": "David Björklund <david.bjorklund@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kesla/unique-ids/issues"
+  },
+  "homepage": "https://github.com/kesla/unique-ids"
+}
