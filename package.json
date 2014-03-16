@@ -1,6 +1,6 @@
 {
   "name": "unique-ids",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transform html so that all ids are unique",
   "main": "unique-ids.js",
   "dependencies": {
