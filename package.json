@@ -4,9 +4,11 @@
   "description": "Transform html so that all ids are unique",
   "main": "unique-ids.js",
   "dependencies": {
-    "trumpet": "~1.6.2"
+    "trumpet": "^1.6.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "^2.10.2"
+  },
   "scripts": {
     "test": "node test.js"
   },
