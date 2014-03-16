@@ -23,9 +23,7 @@ test(function (t) {
   var stream = uniqueIds()
     , output = []
 
-  stream.on('data', function (chunk) {
-    output.push(chunk)
-  })
+  stream.on('data', function (chunk) { output.push(chunk) })
 
   stream.once('end', function () {
     t.equal(output.join(''), '<p class="hello">Hello!<em> world!</em></p>')
@@ -33,6 +31,22 @@ test(function (t) {
   })
 
   stream.write('<p class="hello">Hello!<em> world!</em></p>')
+  stream.end()
+
+})
+
+test(function (t) {
+  var stream = uniqueIds()
+    , output = []
+
+  stream.on('data', function (chunk) { output.push(chunk) })
+
+  stream.once('end', function () {
+    t.equal(output.join(''), '<p id="beep">Hello!</p><p id="beep-1 boop"> world!</p>')
+    t.end()
+  })
+
+  stream.write('<p id="beep">Hello!</p><p id="beep boop"> world!</p>')
   stream.end()
 
 })
