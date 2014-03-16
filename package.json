@@ -4,7 +4,10 @@
   "description": "Transform html so that all ids are unique",
   "main": "unique-ids.js",
   "dependencies": {
-    "trumpet": "^1.6.3"
+    "cornet": "^0.1.5",
+    "duplexer2": "0.0.1",
+    "domutils": "^1.4.0",
+    "htmlparser2": "^3.6.0"
   },
   "devDependencies": {
     "request": "^2.34.0",
