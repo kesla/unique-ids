@@ -4,14 +4,12 @@ var trumpet = require('trumpet')
       var tr = trumpet(),
         idCounts = {}
 
-      tr.selectAll('*', function (elm) {
+      tr.selectAll('*[id]', function (elm) {
         elm.getAttribute('id', function (id) {
-          if (id) {
-            if (idCounts[id])
-              elm.setAttribute('id', id + '-' + idCounts[id])
+          if (idCounts[id])
+            elm.setAttribute('id', id + '-' + idCounts[id])
 
-            idCounts[id] = (idCounts[id] || 0) + 1
-          }
+          idCounts[id] = (idCounts[id] || 0) + 1
         })
       })
 
