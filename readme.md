@@ -10,6 +10,8 @@ npm install unique-ids
 
 ## Example
 
+### Input
+
 ```javascript
 var uniqueIds = require('./unique-ids')
 
@@ -24,6 +26,15 @@ transformStream.write('</p>\n')
 transformStream.write('<p class="world">OMG!</p>\n')
 transformStream.write('<div id="foo">Some more foo</div>')
 transformStream.end()
+```
+
+### Output
+
+```
+<h1 id="foo">Hello</h1>
+<p id="bar">Beep boop<span id="foo-1">woop woop!</span></p>
+<p class="world">OMG!</p>
+<div id="foo-2">Some more foo</div>
 ```
 
 ## Licence
